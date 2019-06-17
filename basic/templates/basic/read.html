@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container text-center">
+<div class="page-header">
+  <h1>All Users</h1>
+</div>
+<br>
+<br>
+<div class="col-md-8">
+	{% for i in allinfo %}
+	    <div class="container">
+	    	<h1>{{ i.id_no }}</h1>
+	    	<h1>{{ i.name }}</h1>
+	    	<h1>{{ i.email }}</h1>
+	    	<h1>{{ i.college_name }}</h1>
+	    	<h1>{{ i.cgpa }}</h1>
+	    </div>
+	    {% endfor %}
+	</div>
+</div>
+{% endblock %}
+
